@@ -18,4 +18,5 @@ with gzip.open(fq_path, "rt") as fq:
             total_bases += len(seq)
 
 Gbp = total_bases/1e9
+
 print(fq_name, total_bases, Gbp, sep='\t')
